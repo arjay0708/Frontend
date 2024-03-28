@@ -1,0 +1,10 @@
+<!-- doctors.component.html -->
+<h2>Doctors</h2>
+<ul>
+  <li *ngFor="let doctor of doctors">
+    <strong>Name:</strong> Dr. {{ doctor.FirstName }} {{ doctor.MiddleName }} {{ doctor.LastName }} {{ doctor.Suffix }}<br>
+    <strong>Specialization:</strong> {{ doctor.Specialization }}<br>
+    <strong>Contact Information:</strong> {{ doctor.ContactInformation }}<br>
+    <strong>Address:</strong> {{ doctor.Address }}
+  </li>
+</ul>
